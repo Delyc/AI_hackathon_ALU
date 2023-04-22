@@ -1,3 +1,7 @@
+import Footer from '@/components/layout/Footer'
+import Calling from '@/components/sections/Calling'
+import Calling2 from '@/components/sections/Calling2'
+import Calling3 from '@/components/sections/Calling3'
 import HowItWorks from '@/components/sections/HowItWorks'
 import Landing from '@/components/sections/Landing'
 import React, { HtmlHTMLAttributes, useRef } from 'react'
@@ -48,13 +52,21 @@ export default function Home() {
 
     <>
     <section className='bg-primary-blue w-full  '>
-      <section className='mx-auto max-w-[75rem]'>
+      {/* <section className='mx-auto max-w-[75rem]'> */}
       <Landing />
-      </section>
+      {/* </section> */}
       <HowItWorks />
 
-      <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/c9e8a0e5-c7bb-4f4e-8467-ee51abe867ff"></iframe>
+      {/* <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/c9e8a0e5-c7bb-4f4e-8467-ee51abe867ff"></iframe> */}
+    
     </section>
+
+    <Calling />
+    <Calling2 />
+<Calling3 />
+
+    <Footer />
+
     {/* <h1 className='text-6xl text-red-500'>Helloooo</h1>  */}
  {/* <div>
   <h1>Type be;owkkf</h1>
