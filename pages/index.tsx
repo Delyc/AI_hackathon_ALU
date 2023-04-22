@@ -1,3 +1,5 @@
+import HowItWorks from '@/components/sections/HowItWorks'
+import Landing from '@/components/sections/Landing'
 import React, { HtmlHTMLAttributes, useRef } from 'react'
 interface Conversation{
   role: string,
@@ -45,8 +47,15 @@ export default function Home() {
   return (
 
     <>
-    <h1 className='text-6xl text-red-500'>Helloooo</h1>
-<div>
+    <section className='bg-primary-blue w-full  '>
+      <section className='mx-auto max-w-[75rem]'>
+      <Landing />
+      </section>
+      <HowItWorks />
+<h1>hello</h1>
+    </section>
+    {/* <h1 className='text-6xl text-red-500'>Helloooo</h1> */}
+{/* <div>
   <h1>Type be;owkkf</h1>
   <input 
   placeholder='type here'
@@ -75,7 +84,7 @@ export default function Home() {
       )
     })}
   </div>
-</div>
+</div> */}
     </>
   )
 }
