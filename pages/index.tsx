@@ -52,10 +52,11 @@ export default function Home() {
       <Landing />
       </section>
       <HowItWorks />
-<h1>hello</h1>
+
+      <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/c9e8a0e5-c7bb-4f4e-8467-ee51abe867ff"></iframe>
     </section>
-    {/* <h1 className='text-6xl text-red-500'>Helloooo</h1> */}
-{/* <div>
+    {/* <h1 className='text-6xl text-red-500'>Helloooo</h1>  */}
+ {/* <div>
   <h1>Type be;owkkf</h1>
   <input 
   placeholder='type here'
