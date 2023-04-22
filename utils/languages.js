@@ -18,7 +18,7 @@ link.forEach(el => {
         const attr = el.getAttribute('lang')
 
         console.log("value", document.getElementById("title").value)
-        document.getElementById("title").textContent = data[attr].title
+        // document.getElementById("title").textContent = data[attr].title
         document.getElementById("description").textContent = data[attr].description
 
     })

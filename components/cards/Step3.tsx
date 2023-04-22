@@ -33,11 +33,11 @@ const Step = ({ index, image , step, description}: any) => {
     return (
         <section>
 
-<div className='flex flex-col-reverse gap-10 h-auto md:flex md:flex-row justify-between  mt-20  overflow-x-hidden'>
+<div className='flex flex-col  items-center mt-10'>
             <div className={`md:w-1/2 lg:w-2/5 space-y-4 order-2 ${index % 2 !== 0 ? 'md:order-2' : 'md:order-1'}`}>
                 
                 <h1 className="font-bold text-primary-pink text-3xl">{step}</h1>
-                <p className="text-white/60">{description}</p>
+                {/* <p className="text-white/60">{description}</p> */}
 
             </div>
             <motion.div
