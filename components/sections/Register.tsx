@@ -1,12 +1,61 @@
 import Button from "../UI/Button";
 import Link from "next/link";
+import { useState } from "react";
+import axios from "axios";
 const Register = () => {
+
+    const [firstName, setFirstName] = useState<string>();
+    const onChangeFirstName = (e: any) => {
+      setFirstName(e.target.value);
+    };
+    const [lastName, setLastName] = useState<string>("");
+    const onChangeLastName = (e: any) => {
+      setLastName(e.target.value);
+    };
+    const [email, setEmail] = useState<string>("");
+    const onChangeEmail = (e: any) => {
+      setEmail(e.target.value);
+    };
+    const [password, setPassword] = useState<string>("");
+    const onChangePassword = (e: any) => {
+      setPassword(e.target.value);
+    };
+
+
+  const createUser = async (data: any) => {
+    try {
+      const res = axios.post("https://itsinzi.onrender.com/register", data);
+      console.log(res)
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const onSubmit = (e: any) => {
+    e.preventDefault()
+    const regData = {
+        firstName: firstName,
+        email: email,
+        password: password,
+        lastName: lastName,
+      };
+    createUser(regData);
+
+    console.log("send ")
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPassword("");
+    e.preventDefault();
+  
+    // console.log(regData)
+
+  };
+
     return (
         <section className="bg-primary-blue flex h-screen">
             <div className="w-1/2 px-10 py-10">
             <Link className="text-[#Cf1259] font-bold text-4xl  py-5" href="#">App~Name</Link>
-
-
                 <div className="px-10">
                     <h1 className="text-white text-6xl mt-5">Welcome page</h1>
                     <p className="text-white leading-[30px] tracking-[1px] mt-10 w-5/6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut quibusdam, hic quia temporibus dicta quos quisquam suscipit, perspiciatis dolores omnis recusandae deserunt? Cumque nemo quibusdam, perferendis tempore modi in!</p>
@@ -20,12 +69,12 @@ const Register = () => {
 
                 <h1 className="text-primary-pink text-center text-3xl text-bold">Register</h1>
                 <form className="flex flex-col gap-4 w-3/5">
-                    <input className="border outline-none py-3 px-5" placeholder="First name" />
-                    <input className="border outline-none py-3 px-5" placeholder="Last name" />
-                    <input className="border outline-none py-3 px-5" placeholder="Email" />
-                    <input className="border outline-none py-3 px-5" placeholder="Password" />
+                    <input type="text" name="firstName" value={firstName} onChange={onChangeFirstName} className="border outline-none py-3 px-5" placeholder="First name" />
+                    <input type="text" name="lastName" value={lastName} onChange={onChangeLastName} className="border outline-none py-3 px-5" placeholder="Last name" />
+                    <input type="email" name="email" value={email} onChange={onChangeEmail} className="border outline-none py-3 px-5" placeholder="Email" />
+                    <input type="password" name="password" value={password} onChange={onChangePassword} className="border outline-none py-3 px-5" placeholder="Password" />
                     {/* <div className="flex justify-center"> */}
-                    <Button text={"Register"} className="w-[10rem]" />
+                    <Button text={"Register"} className="w-[10rem]" onClick={onSubmit}/>
 
                     {/* </div> */}
                 </form>
