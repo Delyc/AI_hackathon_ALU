@@ -1,10 +1,10 @@
 import Button from "../UI/Button";
-
+import Link from "next/link";
 const Login = () => {
     return ( 
         <section className="bg-primary-blue flex h-screen">
         <div className="w-1/2 px-10 py-10">
-            <h1 className="text-[#Cf1259] font-bold text-4xl  py-5">App~Name</h1>
+            <h1 className="text-[#Cf1259] font-bold text-4xl  py-5">App~Name</h1>            <Link className="text-[#Cf1259] font-bold text-4xl  py-5" href="#">App~Name</Link>
 
             <div className="px-10">
                 <h1 className="text-white text-6xl mt-5">Welcome page</h1>
