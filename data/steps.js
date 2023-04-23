@@ -21,7 +21,8 @@ export const services2 = [
 
         step: "Create a clear plan",
         description: "Our platform helps you achieve financial independence for you and your family. With our tools and resources, you can create a clear financial plan to reach your goals. Let us guide you towards a brighter financial future.",
-        image : "/assets/chat.png"
+        image : "/assets/chat.png",
+        id: "decsr3"
     },
 
 ]

@@ -2,7 +2,7 @@ const Footer = () => {
     return ( 
         <footer className="bg-primary-blue py-4">
             <section className="mx-auto max-w-[75rem] flex justify-between">
-            <h1 className="text-primary-pink text-2xl font-bold">App~Name</h1>
+            <h1 className="text-primary-pink text-2xl font-bold">Itsinzi</h1>
 
 <div className="flex gap-4">
 <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

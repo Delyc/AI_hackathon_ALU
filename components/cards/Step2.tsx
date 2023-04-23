@@ -3,8 +3,9 @@ import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import Image from 'next/image'
 import Link from "next/link";
+import { languageChange } from "@/utils/languages";
 
-const Step = ({ index, image , step, description}: any) => {
+const Step = ({ index, image , step, description, id}: any) => {
 
     const [screenSize, setScreenSize] = useState<any>(typeof window !== "undefined" && window.innerWidth);
     const boxVariants = {
@@ -37,7 +38,7 @@ const Step = ({ index, image , step, description}: any) => {
             <div className={`md:w-1/2 lg:w-2/5 space-y-4 order-2 ${index % 2 !== 0 ? 'md:order-2' : 'md:order-1'}`}>
                 
                 <h1 className="font-bold text-primary-pink text-3xl">{step}</h1>
-                <p className="text-white/60">{description}</p>
+                <p id={id} className="text-white/60">{description}</p>
 
             </div>
             <motion.div
