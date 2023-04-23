@@ -4,7 +4,7 @@ const KinyChat = () => {
     return ( 
         <section className="bg-primary-blue flex h-screen">
         <div className="w-1/2 px-10 py-10">
-            <Link className="text-[#Cf1259] font-bold text-4xl  py-5" href="#">Itsinzi</Link>
+            <Link className="text-[#Cf1259] font-bold text-4xl  py-5" href="/">Itsinzi</Link>
 
             <div className="px-10">
                 <h1 className="text-white text-6xl mt-5">Murakaza neza!</h1>
