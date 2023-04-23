@@ -6,7 +6,6 @@ const Calling2 = () => {
     return ( 
         <section className='bg-primary-blue py-2'>
 
-            <h1 id="descr3">testing</h1>
         <SectionWrapper>
 
             <div className='px-40'>
