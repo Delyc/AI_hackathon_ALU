@@ -25,7 +25,8 @@ link.forEach(el => {
         document.getElementById("step4").textContent = data[attr].step4
         // document.getElementById("descr1").textContent = data[attr].descr1
         // document.getElementById("descr2").textContent = data[attr].descr2
-        document.getElementById("descr3").textContent = data[attr].descr3
+        // document.getElementById("descr3").textContent = data[attr].descr3
+        document.getElementById("works").textContent = data[attr].works
 
 
     })
@@ -40,7 +41,8 @@ var data = {
         "step4" : "Live with confidence",
         "decsr1" : "Our platform enables you to interact with our chatbot using both voice calls and text-based chat. To connect with our chatbot, please call this number: +18332725779.",
         "descr2" : "Our platform covers key financial topics and questions that you might have, such as retirement planning, debt management, or investment strategies.",
-        "descr3" : "Our platform helps you achieve financial independence for you and your family. With our tools and resources, you can create a clear financial plan to reach your goals. Let us guide you towards a brighter financial future."
+        "descr3" : "Our platform helps you achieve financial independence for you and your family. With our tools and resources, you can create a clear financial plan to reach your goals. Let us guide you towards a brighter financial future.",
+        "works" : "How It Works"
     },
 
     "kiny" : 
@@ -52,7 +54,8 @@ var data = {
         "step4" : "Baho ufite ikizere",
         "descr1" : "Ihuriro ryacu rigushoboza gukorana na chatbot yacu ukoresheje amajwi yombi hamwe nibiganiro bishingiye kumyandiko. Guhuza na chatbot yacu, nyamuneka hamagara iyi numero: +18332725779.",
         "descr2" : "Ihuriro ryacu rikubiyemo ingingo zingenzi zamafaranga nibibazo ushobora kuba ufite, nko gutegura ikiruhuko cyiza, gucunga imyenda, cyangwa ingamba zishoramari.",
-        "descr3" : "Ihuriro ryacu rigufasha kugera kubwigenge bwamafaranga kuri wewe numuryango wawe. Hamwe nibikoresho byacu hamwe nibikoresho, urashobora gukora gahunda yimari isobanutse kugirango ugere kuntego zawe. Reka tuyobore ejo hazaza heza h'amafaranga."
+        "descr3" : "Ihuriro ryacu rigufasha kugera kubwigenge bwamafaranga kuri wewe numuryango wawe. Hamwe nibikoresho byacu hamwe nibikoresho, urashobora gukora gahunda yimari isobanutse kugirango ugere kuntego zawe. Reka tuyobore ejo hazaza heza h'amafaranga.",
+        "works" : "Uko Ikora"
 
     }
 }

@@ -6,7 +6,7 @@ const HowItWorks = () => {
         <section className="bg-white/5 py-10 mb-44">
             <SectionWrapper>
                 <div className="flex flex-col items-center">
-                    <h1 className="text-primary-pink text-3xl">How it works</h1>
+                    <h1 className="text-primary-pink text-3xl" id='works'>How it works</h1>
                     <div className="flex justify-between gap-10 mt-10">
                         <div className="flex flex-col items-center">
                             <svg width="60px" height="60px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
