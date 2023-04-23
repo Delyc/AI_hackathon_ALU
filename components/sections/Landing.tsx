@@ -10,7 +10,6 @@ const Landing = () => {
 
             <section className="flex justify-between items-center py-20 pt-44 px-20">
                 <div className="w-1/2">
-                    <h1 className="title" id="title">test</h1>
                 <h1 id="description" className="description text-white text-5xl leading-[60px] tracking-[1px]">We Are Your Financial Partner When You’ve Outgrown The Rest</h1>
                 </div>
 
