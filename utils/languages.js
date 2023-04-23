@@ -16,7 +16,6 @@ link.forEach(el => {
         el.classList.add('active')
         const attr = el.getAttribute('lang')
 
-        console.log("value", document.getElementById("title").value)
         // document.getElementById("title").textContent = data[attr].title
         document.getElementById("description").textContent = data[attr].description
         document.getElementById("step1").textContent = data[attr].step1
